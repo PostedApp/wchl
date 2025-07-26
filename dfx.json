@@ -1,11 +1,25 @@
 {
+  "version": 1,
   "canisters": {
-    "frontend": {
+    "front_landing": {
       "frontend": {
-        "entrypoint": "frontend/dist/index.html"
+        "entrypoint": "front/landing/dist/index.html"
       },
-      "source": ["frontend/dist"],
+      "source": ["front/landing/dist"],
       "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:4943",
+      "type": "ephemeral"
     }
   }
 }
