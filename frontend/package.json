@@ -1,0 +1,27 @@
+{
+  "name": "@posted/wchl.frontend",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "prebuild": "npm i --include=dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/tailwind": "^3.1.1",
+    "@fontsource/inter": "^4.5.15",
+    "@icons-pack/react-simple-icons": "^9.4.1",
+    "astro": "^2.2.0",
+    "framer-motion": "^10.11.2",
+    "tailwindcss": "^3.3.1"
+  },
+  "devDependencies": {
+    "@astrojs/react": "^2.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

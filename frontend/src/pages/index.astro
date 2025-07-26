@@ -1,0 +1,28 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Hero } from "../components/Hero.jsx";
+import { Navbar } from "../components/Navbar.jsx";
+import { Features1 } from "../components/Features1.jsx";
+import { Features2 } from "../components/Features2.jsx";
+import { Features3 } from "../components/Features3.jsx";
+import { FeaturesDiagonal } from "../components/FeaturesDiagonal.jsx";
+import { FAQ } from "../components/FAQ.jsx";
+import { Brands } from "../components/Brands.jsx";
+import { Footer } from "../components/Footer.jsx";
+import { ScrollUpButton } from "../components/ScrollUpButton";
+import "../styles/Theme.css";
+import "../styles/Diagonals.css";
+---
+
+<Layout title="Posted">
+  <Navbar client:load />
+  <Hero client:load />
+  <Features1 client:load />
+  <Features2 client:load />
+  <Features3 client:load />
+  <Brands client:load />
+  <FAQ client:load />
+  <FeaturesDiagonal client:load />
+  <Footer />
+  <ScrollUpButton client:load />
+</Layout>
