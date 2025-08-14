@@ -1,11 +1,11 @@
 {
   "version": 1,
   "canisters": {
-    "front_landing": {
+    "frontend_posted_app": {
       "frontend": {
-        "entrypoint": "front/landing/dist/index.html"
+        "entrypoint": "frontend/posted.app/dist/index.html"
       },
-      "source": ["front/landing/dist"],
+      "source": ["frontend/posted.app/dist"],
       "type": "assets"
     }
   },
