@@ -9,13 +9,45 @@
 
 </div>
 
+## 🌟 Here Is A Quick Summary Of What's New For This National Round
 
-Posted is a Web3-native social media management platform that empowers creators and businesses to manage their entire online presence from one decentralized location. Building on the Internet Computer Protocol (ICP), Posted provides a permanent space for content creation and community building.
+We spent a lot of effort on the Backend tools that will be used with the autonomous LLM agents for tool-calling.
+<br>
+Our infrastructure is being built to be Azle compatible using a lot of their cutting edge and experimental features
 
-## 🌟 Demo (WIP)
+🎥 **Pitch Video**: [https://posted.app/wchl_pitch](https://posted.app/wchl_pitch)  
+🎥 **Code Walkthrough Video**: [https://posted.app/wchl_demo](https://posted.app/wchl_demo)
 
-- **Landing Site**: [https://posted.app](https://posted.app)
-- **ICP Canisters**: [WIP]
+#### 🏗️ This Round's Architecture Progress
+
+##### Backend Architecture
+
+```
+Posted Backend (Azle-based)
+├── Tools
+|   ├── YouTube.com   (Major Progress: Partially added to public repo)
+|   ├── Reddit.com    (Major Progress: Partially added to public repo)
+|   ├── X.com         (In Progress)
+|   ├── Discord.com   (In Progress)
+|   ├── Instagram.com (In Progress)
+|   ├── Threads.com   (In Progress)
+├── Onchain Agents
+|   ├── AI Moderation Agent / AutoMod (In Progress: Reverted for Bugfixing/Troubleshooting)
+|   ├── AI Analytics Agent            (In Progress: Reverted for Bugfixing/Troubleshooting)
+|   ├── AI Ideation Agent             (In Progress: Reverted for Bugfixing/Troubleshooting)
+├── Content Management Tools         (In Progress)
+└── Community Engagement Tools       (In Progress)
+```
+
+##### Frontend Architecture
+
+```
+Posted Frontend (Astro + React)
+├── Landing Page & Marketing Site
+├── User Dashboard (In Progress)
+├── Content Management Interface (In Progress)
+└── Community Engagement Tools (In Progress)
+```
 
 ## 🎯 Project Overview
 
@@ -52,29 +84,9 @@ Posted leverages ICP's unique capabilities to create a novel Web3 use case:
 - Transaction fees on creator monetization features
 - Partnership integrations with social platforms and creator agencies.
 
-## 🏗️ Architecture (WIP)
+## 🌐 In Progress ICP Features
 
-### Frontend Architecture
-
-```
-Posted Frontend (Astro + React)
-├── Landing Page & Marketing Site
-├── User Dashboard (Future)
-├── Content Management Interface (Future)
-└── Community Engagement Tools (Future)
-```
-
-### ICP Integration
-
-- **Asset Canister**: Hosts the frontend application
-- **LLM Canisters**: AI-powered content moderation and community management
-- **vetKD System**: Secure, threshold-encrypted storage of social media API keys and sensitive user credentials
-- **Future Backend Canisters**: User data, content storage, cross-platform integrations
-- **Decentralized Storage**: All user content and profiles stored on ICP
-
-## 🌐 ICP Features (WIP)
-
-- **LLM Canisters**: AI-powered content moderation using on-chain large language models for intelligent, context-aware community management
+- **LLM/Agent Canisters**: AI-powered content moderation using on-chain large language models for intelligent, context-aware community management
 - **vetKD (Verifiable Encrypted Threshold Key Derivation)**: Secure, decentralized storage and management of social media API keys, OAuth tokens, and sensitive user credentials without exposing them to individual nodes
 - **Asset Canisters**: Frontend hosting and content delivery
 - **Decentralized Storage**: Permanent content and user data storage
@@ -82,9 +94,6 @@ Posted Frontend (Astro + React)
   - HTTP Outcalls for social platform integrations
   - Timers for scheduled posting
   - Internet Identity for user authentication
-
-## 🎥 Demo Video (coming soon)
-
 
 ## 🚧 Key Considerations
 
@@ -94,24 +103,21 @@ Posted Frontend (Astro + React)
 4. **Web3 UX Design**: Creating familiar interfaces while introducing Web3 concepts
 5. **Scalability Planning**: Designing architecture for future growth on ICP
 
-## 🔮 Hackathon Plans
+## 🔮 Overall Project Hackathon Plans/Roadmap
 
-**Phase 1**:
+**Currently In Progress**:
 
+- Complete social platform tooling integrations (X/Twitter, Instagram, YouTube, Reddit...)
 - Deploy AI moderation system using ICP's LLM canisters
 - Implement vetKD-secured API key management for social platform integrations
-- Complete user authentication with Internet Identity
-- Implement content management dashboard
-- Add first social platform integrations (X/Twitter, Instagram, YouTube, Reddit...)
+- Finalize user authentication with Internet Identity (id.ai)
+- Finalize content management dashboard
 
-**Phase 2**:
+**Next Steps**:
 
 - Advanced AI-powered community insights and analytics
 - Team collaboration features with AI assistance
 - Mobile application with smart moderation
-
-**Phase 3**:
-
 - Token-based governance system with AI-assisted decision making
 - Creator monetization tools
 - Advanced AI content suggestions and optimization
@@ -126,7 +132,7 @@ Apart from the standard social media management functionality, Posted provides A
 
 ---
 
-## 🛠️ Current Stack (WIP)
+## 🛠️ Current Stack
 
 **Frontend**:
 
@@ -135,26 +141,12 @@ Apart from the standard social media management functionality, Posted provides A
 - Tailwind CSS (Styling)
 - Framer Motion (Animations)
 
-**ICP Onchain Infrastructure** (WIP):
+**ICP Onchain Infrastructure**:
 
+- Azle framework and tooling
 - LLM Canisters for AI-powered auto moderation
 - vetKD for secure API key and credential management
 - Asset Canisters for frontend deployment
-
-## 📁 Project Structure
-
-```
-├── frontend/                 # Astro frontend application
-│   ├── src/
-│   │   ├── components/       # React components
-│   │   ├── pages/           # Astro pages
-│   │   ├── assets/          # Images, icons, logos
-│   │   └── styles/          # CSS and theme files
-│   ├── dist/                # Built frontend assets
-│   └── package.json
-├── dfx.json                 # ICP deployment configuration
-└── README.md
-```
 
 ## 🚀 Build and Deployment Instructions
 
