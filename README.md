@@ -9,16 +9,22 @@
 
 </div>
 
-## 🌟 Here Is A Quick Summary Of What's New For This National Round
+<summary>Regional Round</summary>
 
-We spent a lot of effort on the Backend tools that will be used with the autonomous LLM agents for tool-calling.
+## Summary Of What's New For This Regional Round
+
+Building on from last round, we have had over 60 creators sign up for early access and provide their contact information.
+
+We then reached out and scheduled meetings with over 20 creators and their communities over the last couple of weeks, gathering feedback about what pain points they have managing their communities.
+
+The key takeaways we gathered was an increased prevalence of scams and spam flooding their social hubs - predominantly focused on their discord servers which they have not been able to find proper tools to help eradicate.
+
+We then refocused our efforts to prioritise bringing the AI moderation agent to the forefront of our development efforts.
+
 <br>
 Our infrastructure is being built to be Azle compatible using a lot of their cutting edge and experimental features
 
-🎥 **Pitch Video**: [https://posted.app/wchl_pitch](https://posted.app/wchl_pitch)  
-🎥 **Code Walkthrough Video**: [https://posted.app/wchl_demo](https://posted.app/wchl_demo)
-
-#### 🏗️ This Round's Architecture Progress
+#### 🏗️ Architecture Progress
 
 ##### Backend Architecture
 
@@ -27,16 +33,16 @@ Posted Backend (Azle-based)
 ├── Tools
 |   ├── YouTube.com   (Major Progress: Partially added to public repo)
 |   ├── Reddit.com    (Major Progress: Partially added to public repo)
-|   ├── X.com         (In Progress)
-|   ├── Discord.com   (In Progress)
+|   ├── X.com         (In Progress: Partially added to public repo)
+|   ├── Discord.com   (In Progress: Prioritised based off of creator feedback)
 |   ├── Instagram.com (In Progress)
 |   ├── Threads.com   (In Progress)
 ├── Onchain Agents
-|   ├── AI Moderation Agent / AutoMod (In Progress: Reverted for Bugfixing/Troubleshooting)
+|   ├── AI Moderation Agent / AutoMod (Prioritised and in Active Testing on 20k member discord servers)
 |   ├── AI Analytics Agent            (In Progress: Reverted for Bugfixing/Troubleshooting)
 |   ├── AI Ideation Agent             (In Progress: Reverted for Bugfixing/Troubleshooting)
-├── Content Management Tools         (In Progress)
-└── Community Engagement Tools       (In Progress)
+├── Content Management Tools          (In Progress)
+└── Community Engagement Tools        (In Progress)
 ```
 
 ##### Frontend Architecture
